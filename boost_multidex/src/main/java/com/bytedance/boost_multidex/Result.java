@@ -14,12 +14,13 @@ public class Result {
 
     public boolean modified;
 
+    // 执行前剩余空间
     public long freeSpaceBefore;
-
+    //执行后剩余空间
     public long freeSpaceAfter;
-
+    // dalvik vm lib名字
     public String vmLibName;
-
+    // 是否为阿里云OS
     public boolean isYunOS;
 
     public File dataDir;
@@ -32,12 +33,13 @@ public class Result {
 
     public File zipDir;
 
+    // 执行中的异常
     public Throwable fatalThrowable;
-
+    // 执行中的异常列表
     public List<Throwable> unFatalThrowable = new ArrayList<>();
-
+    // pathList dex列表
     public List<String> dexInfoList = new ArrayList<>();
-
+    // 是否支持快速加载dex
     public boolean supportFastLoadDex;
 
     public static Result get() {
