@@ -4,12 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+
 import scala.math.BigDecimal;
 
 public class MainActivity extends Activity {
-//    static {
-//        System.loadLibrary("native-lib");
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +15,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         TextView tv = findViewById(R.id.sample_text);
-//        tv.setText(stringFromJNI());
         tv.setText("Hello BoostMultiDex!");
 
 
@@ -29,9 +26,4 @@ public class MainActivity extends Activity {
         }
     }
 
-//    /**
-//     * A native method that is implemented by the 'native-lib' native library,
-//     * which is packaged with this application.
-//     */
-//    public native String stringFromJNI();
 }
