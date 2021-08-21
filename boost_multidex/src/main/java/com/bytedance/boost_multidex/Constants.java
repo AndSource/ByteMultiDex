@@ -4,7 +4,7 @@ package com.bytedance.boost_multidex;
  * Created by Xiaolin(xiaolin.gan@bytedance.com) on 2019/3/3.
  */
 interface Constants {
-    String TAG = "BoostMultiDex";
+    String TAG = "sanbo.BoostMultiDex";
 
     String CODE_CACHE_SECONDARY_FOLDER_NAME = "code_cache/secondary-dexes";
 

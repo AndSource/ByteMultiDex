@@ -23,13 +23,13 @@ public class MainApplication extends Application {
         if (useBoostMultiDex) {
             Result result = BoostMultiDex.install(this);
             if (result != null && result.fatalThrowable != null) {
-                Log.e("BMD", "exception occored " + result.fatalThrowable);
+                Log.e("sanbo.application", "exception occored " + result.fatalThrowable);
             }
         } else {
             MultiDex.install(this);
         }
 
-        Log.i("BMD", "multidex cost time " + (System.currentTimeMillis() - start) + " ms");
+        Log.i("sanbo.application","multidex cost time " + (System.currentTimeMillis() - start) + " ms");
     }
 }
 
